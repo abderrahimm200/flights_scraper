@@ -57,7 +57,7 @@ def search_flight(trip):
     dest=trip["to"]
     from_to(origin,dest)
     soup=BeautifulSoup(driver.page_source, 'html.parser')
-    results=skip_erreur(".MXl0lf.mtqGb","class")
+    results=skip_erreur(".MXl0lf.tKtwEb.wHYlTd","class")
     ActionChains(driver).click(results).perform()
     main=skip_erreur(".icWGef.A84apb.P0ukfb.bgJkKe.BtDLie","class")
     inputs=main.find_elements_by_tag_name("input")
